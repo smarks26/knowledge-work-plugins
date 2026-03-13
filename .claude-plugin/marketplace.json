@@ -141,6 +141,16 @@
         "sha": "4b1fb10bd707a22cf0cdfad5374ffc885f2ffa8d"
       },
       "homepage": "https://www.sanity.io"
+    },
+    {
+      "name": "zoominfo",
+      "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Zoominfo/zoominfo-mcp-plugin.git",
+        "sha": "0705316ef8a2d0c64f81e50d4612ccc6a74edf03"
+      },
+      "homepage": "https://zoominfo.com"
     }
   ]
 }
