@@ -162,6 +162,17 @@
         "sha": "ce435be18a700dc849d6a63a80da4816d1e2128c"
       },
       "homepage": "https://www.mintlify.com/"
+    },
+    {
+      "name": "daloopa",
+      "description": "Financial analysis skills powered by Daloopa's institutional-grade data",
+      "category": "finance",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/daloopa/plugin.git",
+        "sha": "b5641f5bdfb2a44ac541486444cd8a595ccfc49c"
+      },
+      "homepage": "https://github.com/daloopa/plugin"
     }
   ]
 }
