@@ -217,6 +217,16 @@
         "sha": "815dbc4a045a29e3b81510ba0e3ab806f1baaf0e"
       },
       "homepage": "https://prisma.io"
+    },
+    {
+      "name": "fastly-agent-toolkit",
+      "description": "Fastly development tools and platform skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/fastly/fastly-agent-toolkit.git",
+        "sha": "d9ba949011e725be55cae11acc741aa1f1f393d3"
+      },
+      "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md"
     }
   ]
 }
