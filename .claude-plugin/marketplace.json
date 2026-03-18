@@ -207,6 +207,16 @@
         "sha": "a54566e03c852567589ef85bb449d1e4de229667"
       },
       "homepage": "https://github.com/cockroachdb/claude-plugin"
+    },
+    {
+      "name": "prisma",
+      "description": "Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/prisma/claude-plugin.git",
+        "sha": "815dbc4a045a29e3b81510ba0e3ab806f1baaf0e"
+      },
+      "homepage": "https://prisma.io"
     }
   ]
 }
