@@ -299,6 +299,16 @@
         "sha": "341f8cf47d8b5dda550222152377c50aee34c723"
       },
       "homepage": "https://www.accoil.com/product-tracking"
+    },
+    {
+      "name": "postiz",
+      "description": "Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gitroomhq/postiz-agent.git",
+        "sha": "c5d1bf5f7e95a71e230fc19ae2150ddd9c549854"
+      },
+      "homepage": "https://postiz.com/agent"
     }
   ]
 }
