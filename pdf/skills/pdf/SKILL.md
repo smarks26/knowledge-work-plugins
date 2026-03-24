@@ -30,7 +30,7 @@ on markup — not streaming text back to you.
 ## Tools
 
 ### `list_pdfs`
-List available local PDFs and allowed remote origins. No arguments.
+List available local PDFs and allowed local directories. No arguments.
 
 ### `display_pdf`
 Open a PDF in the interactive viewer. **Call once per document.**
@@ -66,7 +66,7 @@ more commands. **Batch multiple commands in one call** via the
 **Extraction actions:**
 - `get_text` — extract text from page ranges (max 20 pages). Use for
   reading content to decide what to annotate, NOT for summarization.
-- `get_screenshot` — capture a page as PNG (verify your annotations)
+- `get_screenshot` — capture a page as an image (verify your annotations)
 
 **Form action:**
 - `fill_form` — fill named fields: `fields: [{name, value}, ...]`
@@ -105,12 +105,22 @@ images directly onto the viewer.
 6. When done, remind them they can download the annotated PDF from the
    viewer toolbar
 
-### Form filling
-1. `display_pdf` with `elicit_form_inputs: true` — the user fills
-   fields in a prompt before the viewer opens
-2. OR: `display_pdf`, inspect returned `formFields`, ask the user for
-   values, then `interact` → `fill_form`
-3. `get_screenshot` to confirm
+### Form filling (visual, not programmatic)
+Unlike headless form tools, this gives the user **live visual
+feedback** and handles forms with cryptic/unnamed fields where the
+label is printed on the page rather than in field metadata.
+
+1. `display_pdf` — inspect returned `formFields` (name, type, page,
+   bounding box)
+2. If field names are cryptic (`Text1`, `Field_7`), `get_screenshot`
+   the pages and match bounding boxes to visual labels
+3. Ask the user for values using the **visual** labels, or infer from
+   context
+4. `interact` → `fill_form`, then `get_screenshot` to show the result
+5. User confirms or edits directly in the viewer
+
+For simple well-labeled forms, `display_pdf` with
+`elicit_form_inputs: true` prompts the user upfront instead.
 
 ### Signing (visual, not certified)
 1. Ask for the signature/initials image path
@@ -126,7 +136,9 @@ certified or cryptographic digital signature.
 ## Supported Sources
 
 - Local files (paths under client MCP roots)
-- arXiv, bioRxiv, medRxiv, chemRxiv, Zenodo, OSF, HAL Science, SSRN
+- arXiv (`/abs/` URLs auto-convert to PDF)
+- Any direct HTTPS PDF URL (bioRxiv, Zenodo, OSF, etc. — use the
+  direct PDF link, not the landing page)
 
 ## Out of Scope
 

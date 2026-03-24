@@ -45,10 +45,9 @@ the PDF server starts automatically when the plugin loads.
 ## Supported PDF Sources
 
 - Local files (file paths in your working directory)
-- [arXiv](https://arxiv.org), [bioRxiv](https://biorxiv.org),
-  [medRxiv](https://medrxiv.org), [chemRxiv](https://chemrxiv.org)
-- [Zenodo](https://zenodo.org), [OSF](https://osf.io),
-  [HAL Science](https://hal.science), [SSRN](https://ssrn.com)
+- [arXiv](https://arxiv.org) — `/abs/` URLs auto-convert to PDF
+- Any direct HTTPS PDF URL (bioRxiv, Zenodo, OSF, etc. — use the PDF
+  link, not the landing page)
 
 ## Signature Disclaimer
 

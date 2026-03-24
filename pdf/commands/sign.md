@@ -1,6 +1,9 @@
 ---
 description: Place a signature or initials image on a PDF
+argument-hint: "[path-or-url] [signature-image-path]"
 ---
+
+> If you need to check which tools are connected, see [CONNECTORS.md](../CONNECTORS.md).
 
 # Sign PDF
 

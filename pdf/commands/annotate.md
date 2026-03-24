@@ -1,6 +1,9 @@
 ---
 description: Collaboratively annotate a PDF — propose markup, review together, iterate
+argument-hint: "[path-or-url]"
 ---
+
+> If you need to check which tools are connected, see [CONNECTORS.md](../CONNECTORS.md).
 
 # Annotate PDF
 

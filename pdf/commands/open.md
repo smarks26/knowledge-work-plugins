@@ -1,6 +1,9 @@
 ---
 description: Open a PDF in the interactive viewer
+argument-hint: "[path-or-url]"
 ---
+
+> If you need to check which tools are connected, see [CONNECTORS.md](../CONNECTORS.md).
 
 # Open PDF
 
@@ -22,7 +25,7 @@ to **see** a document — not just extract its text.
 
 - Local files (paths or drag-and-drop into your working directory)
 - arXiv (`arxiv.org/abs/...` auto-converts to PDF URL)
-- bioRxiv, medRxiv, chemRxiv, Zenodo, OSF, HAL Science, SSRN
+- Any direct HTTPS PDF URL (use the PDF link, not a landing page)
 
 ## When NOT to use this
 
